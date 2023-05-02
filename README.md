@@ -5,4 +5,3 @@ This discord bot shows the current SOL and $ floor price of Pyth Alligator NFT's
 Feel free to test the live bot here: https://discord.com/api/oauth2/authorize?client_id=1100374130060165190&permissions=0&scope=bot
 
 ![XwKFOX9](https://user-images.githubusercontent.com/25880864/235750611-66bbebe9-303b-4efb-aceb-952edc428db0.jpg)
-![LhHBuC5](https://user-images.githubusercontent.com/25880864/235750622-7a9badf6-527d-432e-86c7-f90cd9669a81.jpg)
