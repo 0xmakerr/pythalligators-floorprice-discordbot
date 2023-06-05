@@ -11,12 +11,16 @@ client = discord.Client(intents=intents, status=status)
 
 async def update_activity():
     while True:
-        floor = await floor_price()
-        solprice = await get_price()
-        solprice_usd = floor * solprice
-        activity = discord.Activity(type=discord.ActivityType.watching, name=f"Floor {floor} SOL | {solprice_usd:.0f}$")
-        await client.change_presence(activity=activity)
-        await asyncio.sleep(60)
+        try:
+            floor = await floor_price()
+            solprice = await get_price()
+            solprice_usd = floor * solprice
+            activity = discord.Activity(type=discord.ActivityType.watching, name=f"Floor {floor} SOL | {solprice_usd:.0f}$")
+            await client.change_presence(activity=activity)
+            await asyncio.sleep(60)
+        except Exception as e:
+            print(f"Error: {e}")
+            await asyncio.sleep(60)
 
 
 @client.event
